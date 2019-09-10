@@ -1,0 +1,52 @@
+h1
+  text-align center
+.spin-init
+  position relative
+  display flex
+
+.progress-bar
+  position absolute
+  width 150px
+  height 2px
+  background #E5E5E5
+  left 50%
+  top 50%
+  margin-left -75px
+  margin-top -1px
+  z-index 55
+
+.progress-line
+  z-index 56
+  width 0
+  height: 2px
+  left 0
+  background black
+.icon-spin
+  content '';
+  width 50px
+  height 50px
+  position absolute
+  left 50%
+  bottom 10px
+  margin-left -25px
+  display inline-block
+  //background-image url(/interface/images/icon_360_hand.svg)
+  background-repeat no-repeat
+  background-size cover
+  animation shake360 3s ease-in-out infinite;
+
+@keyframes shake360
+  50%
+    transform: translateX(30px);
+
+  100%
+    transform: translateX(0px);
+.wrap-canvas
+  display inline-block
+  width 100%
+  text-align center
+  height 400px
+  position relative
+@media (min-width 768px)
+  .icon-spin
+    bottom 40px
