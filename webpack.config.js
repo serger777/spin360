@@ -11,7 +11,7 @@ module.exports = {
     watch: NODE_ENV == "development" ?  true : false,
     entry: './src/index.js',
     output: {
-        path:__dirname
+        path:__dirname+"/build"
     },
     plugins: [
         new MiniCssExtractPlugin({
